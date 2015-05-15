@@ -64,6 +64,8 @@ namespace BusyLightController
             get
             {
                 // Off (default is yellow, commented below)
+                //    Some folks prefer the light to be Off when they are away, rather than yellow. 
+                //    If you prefer yellow, comment out the following line, and uncomment the one below it.
                 return ColorOff;
                 //return Color.FromArgb(64, 64, 0);
 
@@ -160,22 +162,6 @@ namespace BusyLightController
             clr.B = color.B;
 
             ColorChip.Color = clr;
-
-            //if (false) //pulse)
-            //{
-            //    for (int x = 0; x < 10; x++)
-            //    {
-            //        System.Threading.Thread.Sleep(1000);
-            //        clr.A = 128;
-            //        ColorChip.Color = clr;
-
-            //        System.Threading.Thread.Sleep(500);
-            //        clr.A = 255;
-            //        ColorChip.Color = clr;
-
-            //    }
-            //}
-
         }
 
         private void UpdateBusyLight()
