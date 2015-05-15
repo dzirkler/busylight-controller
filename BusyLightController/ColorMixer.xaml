@@ -1,0 +1,9 @@
+﻿<Window
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:Pickers="clr-namespace:ColorPickerControls.Pickers;assembly=ColorPickerControls" x:Class="BusyLightController.ColorMixer"
+        Title="ColorMixer" Height="320" Width="435">
+    <StackPanel>
+        <Pickers:ColorPickerStandard HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10" SelectedColorChanged="ColorPickerStandard_SelectedColorChanged"/>
+    </StackPanel>
+</Window>
